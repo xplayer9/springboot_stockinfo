@@ -417,14 +417,8 @@ Click on "Apply" then "Run"<br>
 ## Step 5: Test
 
 ### Start from http:localhost:8080 or http:localhost:8080/index
+- Add Stock
+- Display real-time stock quote
 
-
-### Add the first and second items
-
-
-### Update the second item	
-
-
-### Delete item 
-
+<img width="1307" alt="Screenshot11" src="https://user-images.githubusercontent.com/48862763/151896171-ac888296-03dc-4f9f-9e51-2e2d9dc16292.png">
 
