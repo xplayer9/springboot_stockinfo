@@ -417,7 +417,6 @@ Click on "Apply" then "Run"<br>
 ### Start from http:localhost:8080 or http:localhost:8080/index
 
 
-	
 ### Add the first and second items
 
 
