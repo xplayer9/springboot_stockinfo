@@ -417,7 +417,7 @@ Click on "Apply" then "Run"<br>
 ## Step 5: Test
 
 ### Start from http:localhost:8080 or http:localhost:8080/index
-- Add Stock
+- Add or Delete Stock
 - Display real-time stock quote
 - Page banner image was from "Seeking Alpha" website
 
