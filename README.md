@@ -83,12 +83,12 @@ import lombok.Data;
 @Data
 @Table(name="`stocktable`")
 public class StockModel {
-	  @Id
+	@Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name="id")
     private Long id;
 	
-	  @Column(name="name")
+	@Column(name="name")
     private String name;
     
     @Column(name="stock")
@@ -162,8 +162,8 @@ public class StockService {
 	@Autowired
 	StockRepository rep;
 	
+	//Need a free API key from data provider
 	private String quoto = "https://financialmodelingprep.com/api/v3/quote/";
-	//private String apiKey = "?apikey=cde60046dfbfa16b001a6b6acea55582";
 	private String apiKey = "?apikey=d1f8636b9df280532258cc61137e6f24";
 	
 	HttpClient client = HttpClientBuilder.create().build();
@@ -265,6 +265,8 @@ public class StockController {
     		timeout = 0;
     	}
     	catch(Exception e) {
+			//Due to limitation of a free API key
+			//Reach query limit, so retry again unless fail 10 times
     		e.printStackTrace();
     		if(++timeout == 10)
     			return "index";
